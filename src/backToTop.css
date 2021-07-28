@@ -1,0 +1,24 @@
+.move__to__top__icon {
+  background: #962d2d;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  cursor: pointer;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .move__to__top__icon {
+    height: 32px;
+    width: 32px;
+    bottom: 10px;
+    right: 10px;
+  }
+}

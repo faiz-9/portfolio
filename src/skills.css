@@ -1,0 +1,336 @@
+.skills_wrapper {
+  font-family: var(--wrapper_font);
+  margin-bottom: 11em;
+}
+
+.skills_heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #962d2d;
+}
+
+.skills {
+  width: 56%;
+  margin: 0 auto 5em auto;
+  color: black;
+}
+
+.skills li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.bar {
+  background: black;
+
+  display: block;
+  height: 20px;
+
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar span {
+  height: 20px;
+  float: left;
+
+  background-color: #faad80;
+}
+
+.html {
+  width: 90%;
+  animation: html 2s;
+}
+
+.css {
+  width: 85%;
+  animation: css 2s;
+}
+
+.bootstrap {
+  width: 80%;
+  animation: bootstrap 2s;
+}
+
+.js {
+  width: 74%;
+  animation: js 2s;
+}
+
+.php {
+  width: 77%;
+  animation: php 2s;
+}
+
+.mysql {
+  width: 84%;
+  animation: mysql 2s;
+}
+
+.ajax {
+  width: 82%;
+  animation: ajax 2s;
+}
+
+.jquery {
+  width: 88%;
+  animation: jquery 2s;
+}
+
+.react {
+  width: 69%;
+  animation: react 2s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 74%;
+  }
+}
+
+@keyframes php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 77%;
+  }
+}
+
+@keyframes mysql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 84%;
+  }
+}
+
+@keyframes ajax {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 82%;
+  }
+}
+
+@keyframes jquery {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 88%;
+  }
+}
+
+@keyframes react {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 69%;
+  }
+}
+
+.skill_description_container {
+  width: 75%;
+  margin: 0px auto 7em auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.icons_awesome {
+  width: 120px;
+  height: 120px;
+  background-color: #212121;
+  display: grid;
+  place-items: center;
+
+  clip-path: circle(50% at 50% 50%);
+}
+
+.icons_awesome .fa {
+  font-size: 3em;
+  color: #fff;
+}
+
+.icons_container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.icons_description {
+  text-align: center;
+}
+
+.icons_description h3 {
+  margin: 12px 0;
+}
+
+.icons_description p {
+  color: #212121;
+}
+
+/* .piechart {
+  min-width: 400px;
+  min-height: 400px;
+
+  background: radial-gradient(circle closest-side, transparent 100%, #fff 0),
+    conic-gradient(
+      from 180deg,
+      #f5fdb0 0,
+      #f5fdb0 10%,
+      #716f81 0,
+      #716f81 30%,
+      #d79771 0,
+      #d79771 45%,
+      #57837b 0,
+      #57837b 57%,
+      #c6b4ce 0,
+      #c6b4ce 66%,
+      #a19882 0,
+      #a19882 76%,
+      #66de93 0,
+      #66de93 89%,
+      #eae2b6 0,
+      #eae2b6 100%
+    );
+} */
+
+/* .piechart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.piechart_note {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.piechart_container {
+  background-color: #e8e8e8;
+} */
+
+.skills__heading__container {
+  margin-bottom: 5em;
+  text-align: center;
+}
+.about__underline__skill {
+  margin-top: 7px;
+  height: 4px;
+  display: inline-block;
+  width: 45px;
+  border-radius: 2px;
+  background-color: #962d2d;
+}
+
+@media screen and (max-width: 768px) {
+  .skills {
+    width: 74%;
+  }
+
+  .icons_container {
+    width: 45%;
+  }
+
+  .icons_container:nth-child(3) {
+    margin-top: 50px;
+  }
+
+  .icons_container:nth-child(4) {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills_wrapper {
+    margin-bottom: 9em;
+  }
+  .skills_heading {
+    font-size: 1.7rem;
+  }
+  .about__underline__skill {
+    width: 45px;
+  }
+
+  .skill_description_container {
+    width: 85%;
+    margin-bottom: 5em;
+  }
+
+  .skills__heading__container {
+    margin-bottom: 3em;
+  }
+  .icons_awesome {
+    width: 80px;
+    height: 80px;
+  }
+
+  .icons_awesome .fa {
+    font-size: 2em;
+  }
+
+  .icons_description h3 {
+    font-size: 1em;
+    margin: 9px 0;
+  }
+
+  .icons_description p {
+    font-size: 0.8em;
+  }
+
+  .skills {
+    width: 88%;
+  }
+
+  .bar,
+  .bar span {
+    height: 15px;
+  }
+
+  .piechart_description h3 {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,138 @@
+.form-holder {
+  font-family: var(--wrapper_font);
+  position: relative;
+  background-color: #212121;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.contact-heading {
+  font-size: 2.5rem;
+}
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0px auto 0px auto;
+  box-sizing: border-box;
+  padding: 82px;
+  color: #fff;
+}
+
+.container p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 45px;
+}
+
+.input,
+.msg .area {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+  font-family: var(--wrapper_font);
+}
+
+.login .input:last-child {
+  margin-right: 0;
+}
+
+.msg .area {
+  height: 200px;
+  resize: none;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 0.5em;
+  padding: 0.5em 2em;
+  border: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  transition: 0.3s linear;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.05em;
+}
+
+.btn:hover {
+  background-color: #962d2d;
+  color: white;
+}
+
+.input:focus,
+.msg .area:focus {
+  border: 2px solid #486255;
+}
+
+::-webkit-input-placeholder {
+  font-family: var(--wrapper_font);
+}
+
+.button-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact__heading__container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about__underline__contact {
+  margin-top: 7px;
+  height: 4px;
+  display: inline-block;
+  width: 55px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+#hvqst {
+  font-size: 15px;
+}
+@media screen and (max-width: 1100px) {
+  .form-holder {
+    clip-path: polygon(50% 8%, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form-holder {
+    clip-path: polygon(50% 8%, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
+  .contact__heading__container .contact-heading {
+    margin-top: 50px;
+    font-size: 1.7rem;
+  }
+
+  .about__underline__contact {
+    width: 45px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  #hvqst {
+    font-size: 13px;
+  }
+
+  .input,
+  .msg .area {
+    padding: 10px;
+  }
+
+  .msg .area {
+    height: 150px;
+  }
+
+  .btn {
+    padding: 0.4em 1.5em;
+    font-size: 0.9em;
+  }
+}

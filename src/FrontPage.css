@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+
+:root {
+  --wrapper_font: "Source Serif Pro", serif;
+}
+
+.whole_wrapper {
+  margin-bottom: 10em;
+  font-family: var(--wrapper_font);
+}
+
+.front-wrapper {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  z-index: 19;
+  border-bottom: 1px solid #962d2d;
+  padding-top: 20px;
+  background: #e8e8e8;
+}
+.text-container {
+  font-size: 2em;
+  color: black;
+
+  padding: 50px;
+  text-align: center;
+}
+.highlight {
+  font-weight: 100;
+
+  color: #126e82;
+  font-size: 1.5em;
+  text-align: center;
+}
+.name {
+  font-size: 1.5em;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+.text {
+  font-weight: normal;
+  color: #f98404;
+  font-size: 1.5em;
+}
+.cursor {
+  display: inline-block;
+  width: 3px;
+  font-size: 1.5em;
+  background: #ccc;
+  margin-left: 4px;
+  animation: blink 1s infinite linear;
+}
+.stop-blink {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background: #ccc;
+  }
+  50% {
+    background: transparent;
+  }
+  100% {
+    background: #ccc;
+  }
+}
+
+.profile__img {
+  width: 250px;
+  height: 250px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+  .text-container {
+    font-size: 1.5em;
+  }
+  .front__button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .whole_wrapper {
+    margin-bottom: 5em;
+  }
+
+  .text-container {
+    font-size: 1em;
+    padding: 50px 10px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+  .front__button {
+    font-size: 0.9rem;
+  }
+  .profile__img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .text-container {
+    font-size: 0.9em;
+  }
+  .front__button {
+    font-size: 0.8rem;
+  }
+}
