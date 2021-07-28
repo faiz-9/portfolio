@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.47fb67fa.chunk.css",
+    "main.js": "/portfolio/static/js/main.1c08a2f5.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.1c08a2f5.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.bcd5af5a.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.bcd5af5a.js.map",
+    "static/js/2.23261f9e.chunk.js": "/portfolio/static/js/2.23261f9e.chunk.js",
+    "static/js/2.23261f9e.chunk.js.map": "/portfolio/static/js/2.23261f9e.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.47fb67fa.chunk.css.map": "/portfolio/static/css/main.47fb67fa.chunk.css.map",
+    "static/js/2.23261f9e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.23261f9e.chunk.js.LICENSE.txt",
+    "static/media/DOM_manipulation_javascript.94fb82ff.PNG": "/portfolio/static/media/DOM_manipulation_javascript.94fb82ff.PNG",
+    "static/media/ajaxFilter_php.d4736a7d.PNG": "/portfolio/static/media/ajaxFilter_php.d4736a7d.PNG",
+    "static/media/ajax_form_php.6d6dc0fa.PNG": "/portfolio/static/media/ajax_form_php.6d6dc0fa.PNG",
+    "static/media/cms_php.1510b553.PNG": "/portfolio/static/media/cms_php.1510b553.PNG",
+    "static/media/covid19API_javascript.8a54c889.PNG": "/portfolio/static/media/covid19API_javascript.8a54c889.PNG",
+    "static/media/githubApi_react.76081119.PNG": "/portfolio/static/media/githubApi_react.76081119.PNG",
+    "static/media/guessWords_javascript.2b4adc49.PNG": "/portfolio/static/media/guessWords_javascript.2b4adc49.PNG",
+    "static/media/hbd_javascript.3fc3fdb1.PNG": "/portfolio/static/media/hbd_javascript.3fc3fdb1.PNG",
+    "static/media/headphones_frontend.d503f3c4.PNG": "/portfolio/static/media/headphones_frontend.d503f3c4.PNG",
+    "static/media/icon-close.bbbbb006.svg": "/portfolio/static/media/icon-close.bbbbb006.svg",
+    "static/media/icon-hamburger.5153cb80.svg": "/portfolio/static/media/icon-hamburger.5153cb80.svg",
+    "static/media/netflix_react.f307445f.PNG": "/portfolio/static/media/netflix_react.f307445f.PNG",
+    "static/media/notes_app_javascript.b20b201e.PNG": "/portfolio/static/media/notes_app_javascript.b20b201e.PNG",
+    "static/media/nov_frontend.a05809d1.PNG": "/portfolio/static/media/nov_frontend.a05809d1.PNG",
+    "static/media/pigGame_javascript.ac14d9b5.PNG": "/portfolio/static/media/pigGame_javascript.ac14d9b5.PNG",
+    "static/media/profile.272eee72.jfif": "/portfolio/static/media/profile.272eee72.jfif",
+    "static/media/profile.c477c1c2.png": "/portfolio/static/media/profile.c477c1c2.png",
+    "static/media/reactWebsiteTemplate_react.ea816c93.PNG": "/portfolio/static/media/reactWebsiteTemplate_react.ea816c93.PNG",
+    "static/media/room_frontend.c1ca867b.PNG": "/portfolio/static/media/room_frontend.c1ca867b.PNG",
+    "static/media/store_frontend.3b003c21.PNG": "/portfolio/static/media/store_frontend.3b003c21.PNG",
+    "static/media/sunnyside_frontend.f4829472.PNG": "/portfolio/static/media/sunnyside_frontend.f4829472.PNG",
+    "static/media/tessitura_php.57b240e8.PNG": "/portfolio/static/media/tessitura_php.57b240e8.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bcd5af5a.js",
+    "static/js/2.23261f9e.chunk.js",
+    "static/css/main.47fb67fa.chunk.css",
+    "static/js/main.1c08a2f5.chunk.js"
+  ]
+}
