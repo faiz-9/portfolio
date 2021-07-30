@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap");
+
+:root {
+  --font: "Source Serif Pro", serif;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  /* height: 4rem; */
+  padding: 10px;
+  /* background-color: black; */
+  background-color: #171010;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font);
+  border-bottom: 6px solid #962d2d;
+}
+
+.logo {
+  font-size: 1.2rem;
+  margin-left: 2.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin-right: 2.2rem;
+
+  width: 450px;
+  justify-content: space-between;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  color: aqua;
+  transition: all 0.5s;
+}
+
+.active {
+  border-bottom: 1px solid red;
+}
+
+.burger {
+  display: none;
+}
+
+.mob-nav-list {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: grid;
+    align-items: unset;
+    justify-content: unset;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+  }
+
+  .burger {
+    display: grid;
+    margin-right: 2.2rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .mob-nav-list {
+    display: grid;
+    visibility: hidden;
+    height: 0;
+    list-style: none;
+    margin-left: 2.2rem;
+    transition: 0.3s linear;
+  }
+
+  .show {
+    display: grid;
+    height: 130px;
+    visibility: unset;
+  }
+
+  .gvh {
+    margin-top: 10px;
+  }
+
+  .new-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mob-nav-list li {
+    margin-bottom: 10px;
+  }
+  .mob-nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+  }
+  .profile-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    margin-left: 1rem;
+  }
+
+  .burger {
+    margin-right: 1rem;
+  }
+
+  .mob-nav-list {
+    margin-left: 1rem;
+  }
+}
