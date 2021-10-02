@@ -1,5 +1,6 @@
 .footer {
-  background-color: black;
+  /* background-color: black; */
+  background-color: #171010;
   padding: 20px;
   width: 100%;
   display: flex;
@@ -28,8 +29,6 @@
   border: 1px solid #595260;
 }
 .icon:hover {
-  width: 40px;
-  height: 40px;
   display: grid;
   place-items: center;
   background: #962d2d;

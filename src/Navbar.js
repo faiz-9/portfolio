@@ -5,7 +5,7 @@ import hamburger from "./images/icon-hamburger.svg";
 import closeBurger from "./images/icon-close.svg";
 import NavbarMain from "./NavbarMain";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [current, setCurrent] = useState(true);
 
   const toggler = () => {
@@ -20,15 +20,31 @@ const Navbar = () => {
 
   useEffect(() => {
     NavbarMain();
+    let switcher = document.querySelector(".switcher");
+    if (localStorage.getItem("darkMode") === "dark") {
+      switcher.checked = true;
+    }
   });
 
   return (
     <nav>
       <div className="logo">
         <div className="profile">
-          <img src={profile} width="35px" height="35px" />
+          {/* <img src={profile} width="35px" height="35px" /> */}
+          <div className="toggler">
+            <label className="switch">
+              <input
+                type="checkbox"
+                onClick={props.modeToggler}
+                className="switcher"
+              />
+              <span className="slider round"></span>
+            </label>
+          </div>
         </div>
-        <div className="profile-text">Faizan Siddiqui</div>
+        <div className="profile-text" style={{ marginLeft: "10px" }}>
+          Dark Mode
+        </div>
       </div>
 
       <ul className="nav-list">

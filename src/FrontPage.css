@@ -9,6 +9,10 @@
   font-family: var(--wrapper_font);
 }
 
+.quote {
+  color: #4c4c6d;
+}
+
 .front-wrapper {
   display: grid;
   place-items: center;

@@ -39,7 +39,7 @@ const ContactForm = () => {
       <form className="container" onSubmit={handleSubmit}>
         <div className="contact__heading__container">
           <p className="contact-heading">CONTACT</p>
-          <p class="about__underline__contact ">&nbsp;</p>
+          <p className="about__underline__contact ">&nbsp;</p>
           <p id="hvqst">Have a question or want to work together?</p>
         </div>
 

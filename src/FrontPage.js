@@ -2,14 +2,23 @@ import React, { useEffect } from "react";
 import "./FrontPage.css";
 import FrontPageMain from "./FrontPageMain.js";
 import profile from "./images/profile.jfif";
-function FrontPage() {
+function FrontPage(props) {
   useEffect(() => {
     FrontPageMain();
   }, []);
+
+  console.log(props.mode);
+
   return (
     <>
       <div className="whole_wrapper" id="home">
-        <div className="front-wrapper">
+        <div
+          className={`${
+            props.mode === "light"
+              ? "front-wrapper"
+              : "front-wrapper dark__theme__bg"
+          }`}
+        >
           <img
             className="profile__img"
             src={profile}
@@ -18,7 +27,13 @@ function FrontPage() {
                 " polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)",
             }}
           />
-          <div className="text-container">
+          <div
+            className={`${
+              props.mode === "light"
+                ? "text-container"
+                : "text-container dark__theme__color"
+            }`}
+          >
             <span className="name">Hi, I'm </span>
             <span className="highlight">Faizan Ahmed Siddiqui</span>
             <p className="title">
@@ -30,7 +45,7 @@ function FrontPage() {
               2 months with Cillyfox and 2 months as a Full Stack Developer with
               a Freelance Company.
               <br />
-              <span style={{ color: "#4C4C6D" }}>
+              <span className="quote">
                 “I believe that stripping the website down to the basics and
                 just doing a few things really well, makes it very attractive.”
               </span>

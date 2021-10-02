@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProjectApi from "./ProjectApi";
 import "./GalleryStyling.css";
 
-const ProjecGallery = () => {
+const ProjecGallery = (props) => {
   const [items, setItems] = useState(ProjectApi);
 
   const filterItem = (catItem) => {
@@ -28,12 +28,25 @@ const ProjecGallery = () => {
     target.classList.add("active-project");
   };
 
+  let button_lists = document.querySelectorAll(".projects-list li");
+  console.log(button_lists);
+  if (props.mode === "dark") {
+    for (let i = 0; i < button_lists.length; i++) {
+      button_lists[i].style.color = "white";
+      console.log(button_lists[i]);
+    }
+  } else {
+    for (let i = 0; i < button_lists.length; i++) {
+      button_lists[i].style.color = "";
+    }
+  }
+
   return (
     <>
       <div className="projects_container" id="projects">
         <div className="heading__container">
           <h1 className="projects-heading">PROJECTS</h1>
-          <p class="about__underline ">&nbsp;</p>
+          <p className="about__underline ">&nbsp;</p>
         </div>
         <div className="button_filters">
           <ul className="projects-list">
