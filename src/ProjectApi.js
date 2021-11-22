@@ -39,7 +39,7 @@ const ProjectApi = [
     image: cms,
     name: "Content Management System",
     category: "php",
-    link: "http://cmsprojectfaizan.infinityfreeapp.com/CMS_TEMPLATE/index.php",
+    link: "http://cmsfaizan.infinityfreeapp.com/CMS_TEMPLATE/",
   },
 
   {
@@ -103,7 +103,7 @@ const ProjectApi = [
     image: tessitura,
     name: "Freelancing Project",
     category: "php",
-    link: "http://tessituraparklane.infinityfreeapp.com/EXCEL_PROJECT/import/PHPExcel/",
+    link: "https://tessituraparklane.com/",
   },
 
   {

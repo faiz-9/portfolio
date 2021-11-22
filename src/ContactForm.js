@@ -23,10 +23,10 @@ const ContactForm = () => {
         js_op.innerHTML = "Thank You For Contacting !";
         setTimeout(() => {
           js_op.innerHTML = "";
-        }, 3000);
+        }, 2000);
       })
       .catch((error) => {
-        alert(error.message);
+        alert(`HELLO ${error.message}`);
       });
 
     setName("");

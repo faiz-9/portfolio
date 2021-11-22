@@ -43,7 +43,8 @@ function FrontPage(props) {
             <p>
               I am currently pursuing Btech CSE, I have worked as an intern for
               2 months with Cillyfox and 2 months as a Full Stack Developer with
-              a Freelance Company.
+              a Freelance Company and 1 month as a Web Developer with the
+              company named Pharoscion Global.
               <br />
               <span className="quote">
                 “I believe that stripping the website down to the basics and

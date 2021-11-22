@@ -38,6 +38,7 @@ const Navbar = (props) => {
                 onClick={props.modeToggler}
                 className="switcher"
               />
+              {/* <i class="fa fa-sun-o" aria-hidden="true"></i> */}
               <span className="slider round"></span>
             </label>
           </div>
