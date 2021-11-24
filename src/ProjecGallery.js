@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import ProjectApi from "./ProjectApi";
 import "./GalleryStyling.css";
+import Loader from "react-loader-spinner";
 
 const ProjecGallery = (props) => {
+  const [loading, setLoading] = useState(false);
   const [items, setItems] = useState(ProjectApi);
 
   const filterItem = (catItem) => {
@@ -41,6 +43,10 @@ const ProjecGallery = (props) => {
     }
   }
 
+  const func = () => {
+    setLoading(true);
+  };
+
   return (
     <>
       <div className="projects_container" id="projects">
@@ -75,8 +81,11 @@ const ProjecGallery = (props) => {
         <div className="projects_styling">
           {items.map((elem) => {
             const { id, category, image, name, link } = elem;
+
             return (
               <div className="projects" key={id}>
+                {/* <Loader type="Puff" color="#00BFFF" height={100} width={100} /> */}
+
                 <div
                   className="project_images post settle_size"
                   style={{ backgroundImage: `url(${image})` }}

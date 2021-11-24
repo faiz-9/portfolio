@@ -31,21 +31,37 @@ const Navbar = (props) => {
       <div className="logo">
         <div className="profile">
           {/* <img src={profile} width="35px" height="35px" /> */}
-          <div className="toggler">
+          {/* <div className="toggler">
             <label className="switch">
               <input
                 type="checkbox"
                 onClick={props.modeToggler}
                 className="switcher"
               />
-              {/* <i class="fa fa-sun-o" aria-hidden="true"></i> */}
               <span className="slider round"></span>
             </label>
+          </div> */}
+
+          {/* 24 NOV  */}
+          <div className="nov24">
+            <input
+              type="checkbox"
+              className="switcher"
+              id="chk"
+              onClick={props.modeToggler}
+            />
+            <label class="label" for="chk">
+              <i class="fa fa-sun-o"></i>
+              <i class="fa fa-moon-o"></i>
+              <div class="ball"></div>
+            </label>
           </div>
+
+          {/* 24 NOV  */}
         </div>
-        <div className="profile-text" style={{ marginLeft: "10px" }}>
-          Dark Mode
-        </div>
+        {/* <div className="profile-text" style={{ marginLeft: "10px" }}>
+          Set Mode
+        </div> */}
       </div>
 
       <ul className="nav-list">
