@@ -51,8 +51,9 @@ const Navbar = (props) => {
               onClick={props.modeToggler}
             />
             <label class="label" for="chk">
-              <i class="fa fa-sun-o"></i>
               <i class="fa fa-moon-o"></i>
+              <i class="fa fa-sun-o"></i>
+
               <div class="ball"></div>
             </label>
           </div>
