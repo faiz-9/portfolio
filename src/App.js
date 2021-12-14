@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
+// import Loader from "react-loader-spinner";
+import Loader from "./Loader";
 
 import "./App.css";
 
@@ -11,6 +13,16 @@ import Footer from "./Footer";
 import BackToTop from "./BackToTop";
 
 const App = () => {
+  // ON PAGE LOADING
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
+
   // DARK MODE
   const [mode, setMode] = useState("light");
 
@@ -42,13 +54,19 @@ const App = () => {
 
   return (
     <>
-      <Navbar mode={mode} modeToggler={modeToggler} />
-      <FrontPage mode={mode} />
-      <Skills mode={mode} />
-      <ProjecGallery mode={mode} />
-      <ContactForm />
-      <Footer />
-      <BackToTop />
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <Navbar mode={mode} modeToggler={modeToggler} />
+          <FrontPage mode={mode} />
+          <Skills mode={mode} />
+          <ProjecGallery mode={mode} />
+          <ContactForm />
+          <Footer />
+          <BackToTop />
+        </>
+      )}
     </>
   );
 };
