@@ -1,0 +1,16 @@
+:root {
+  --bg-color: yellow;
+  --text-color: red;
+}
+
+[data-theme="dark"] {
+  --bg-color: #3f3f3f;
+  --text-color: #fff;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

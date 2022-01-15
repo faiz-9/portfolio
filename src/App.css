@@ -11,6 +11,21 @@
   color: white;
 }
 
+/* DARK THEME COLORS  */
+.dark__theme__bg {
+  background: #121212 !important;
+}
+
+.dark__theme__color {
+  color: white !important;
+}
+
+.dark__theme__skills__color {
+  color: whitesmoke !important;
+}
+
+/* DARK THEME COLORS  */
+
 html {
   scroll-behavior: smooth;
 }

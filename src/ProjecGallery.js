@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import ProjectApi from "./ProjectApi";
 import "./GalleryStyling.css";
+import Loader from "react-loader-spinner";
 
-const ProjecGallery = () => {
+const ProjecGallery = (props) => {
+  const [loading, setLoading] = useState(false);
   const [items, setItems] = useState(ProjectApi);
 
   const filterItem = (catItem) => {
@@ -28,12 +30,29 @@ const ProjecGallery = () => {
     target.classList.add("active-project");
   };
 
+  let button_lists = document.querySelectorAll(".projects-list li");
+  console.log(button_lists);
+  if (props.mode === "dark") {
+    for (let i = 0; i < button_lists.length; i++) {
+      button_lists[i].style.color = "white";
+      console.log(button_lists[i]);
+    }
+  } else {
+    for (let i = 0; i < button_lists.length; i++) {
+      button_lists[i].style.color = "";
+    }
+  }
+
+  const func = () => {
+    setLoading(true);
+  };
+
   return (
     <>
       <div className="projects_container" id="projects">
         <div className="heading__container">
           <h1 className="projects-heading">PROJECTS</h1>
-          <p class="about__underline ">&nbsp;</p>
+          <p className="about__underline ">&nbsp;</p>
         </div>
         <div className="button_filters">
           <ul className="projects-list">
@@ -62,8 +81,11 @@ const ProjecGallery = () => {
         <div className="projects_styling">
           {items.map((elem) => {
             const { id, category, image, name, link } = elem;
+
             return (
               <div className="projects" key={id}>
+                {/* <Loader type="Puff" color="#00BFFF" height={100} width={100} /> */}
+
                 <div
                   className="project_images post settle_size"
                   style={{ backgroundImage: `url(${image})` }}
