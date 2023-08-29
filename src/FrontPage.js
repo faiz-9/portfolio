@@ -41,10 +41,12 @@ function FrontPage(props) {
               <span className="cursor">&nbsp;</span>
             </p>
             <p>
-              I am currently pursuing Btech CSE, I have worked as an intern for
-              2 months with Cillyfox and 2 months as a Full Stack Developer with
-              a Freelance Company and 1 month as a Web Developer with the
-              company named Pharoscion Global.
+              // I am currently pursuing Btech CSE, I have worked as an intern for
+              // 2 months with Cillyfox and 2 months as a Full Stack Developer with
+              // a Freelance Company and 1 month as a Web Developer with the
+              // company named Pharoscion Global.
+              I completed my graduation in Btech Computer Science and Engineering in 2022, and I am currently working as a Frontend Developer.
+            
               <br />
               <span className="quote">
                 “I believe that stripping the website down to the basics and
